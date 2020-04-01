@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Hola, ejercicio del tercer video espero que vaya bien </h1>
+        <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p id="parrafo" class="lead">Odit repellat libero id incidunt assumenda minus nihil veniam ab reiciendis numquam!</p>
+        <button id="boton" class="btn-btn-info">Dale Click</button>
+    </div>
+    <script>
+      var h1 = document.getElementById("titulo");
+      console.log(h1.innerHTML);
+      h1.innerHTML = "Hola nuevamente";
+      h1.style.color="red";
+      h1.style.background="blue";
+
+      var p = document.getElementById("parrafo");
+      console.log(p.innerHTML);
+      
+      p.style.background="black";
+
+      var button = document.getElementById("boton");
+      function cambio () {
+      p.style.color="blue";
+      }
+      button.onclick=cambio;
+
+      var p = document.getElementsByClassName(lead);
+      p.style.color="red";
+
+
+/* Eventos con el boton
+     var boton  = document.getElementById("boton");
+     boton.addEventListener('click',function(){
+     console.log('Diste un click');
+}
+     var boton  = document.getElementById("boton");
+     boton.addEventListener('mouseover',function(){
+     console.log('Pasaste por el boton');
+                                                }
+     var boton  = document.getElementById("boton");
+     boton.addEventListener('mouseout',function(){
+     console.log('Hasta luego');
+                                             }
+
+     var boton = document.getElementById('boton') 
+     boton.onclick = function () {
+     document.location.href = 'http://otrapagina.com'
+                                 }  
+*/
+    </script>
+</body>
+</html>
